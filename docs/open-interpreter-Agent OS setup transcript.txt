@@ -1,0 +1,42 @@
+Intro
+Open Interpreter is an open source project that lets LLMs run code. It's a natural language
+interface to your computer's capabilities. You simply chat with it like you would with ChatGPT,
+but OI can actually execute code to get things done, whether that's editing a video,
+scraping data from the web, or analyzing a large dataset. Or you can import it as a library into
+your Python project to bring intelligence into your scripts. Open Interpreter makes AI assistance
+Installation
+accessible to everyone, even non-technical users via a chat interface on your computer.
+It's very straightforward, and I have a few options to get you started.
+The easiest way to start using Open Interpreter is to use the one-click installer. There's one
+for Mac, Windows, and Linux. Just check out the link in the description.
+Once you run the installer and OI is downloaded, you can run it by opening your terminal and
+typing `interpreter`. If you already use Python, I recommend installing OI with `pip install open
+interpreter`, and then again run it in your terminal with `interpreter`. Be sure to set up
+a virtual environment with virtualenv. OI requires Python 3.10 or 3.11, so set up your environment
+accordingly.
+Open Source
+OI is fully open source, and you can see all of the code on GitHub. If you're more technical and
+want to make changes to the code, you can clone the repo and run OI with Poetry. Just run poetry
+install and `poetry run interpreter` to run your local code in your terminal. Check out our guides
+on making contributions raising issues. Open Interpreter became as powerful as it is today
+because of the community working together to build this amazing technology. Running Interpreter
+without any arguments uses the default settings, including setting the model to GPT-4 turbo,
+and requires asking you to
+improve code before running it. OI runs in your local environment with full access to the
+internet, is not restricted by time or file size, and can utilize any package or library. OI is
+Advantages
+flexible and customizable. It works with a variety of language models, so you can use your
+favourite, even local ones, totally offline. I'll go over those details in another video, but check
+out the documentation to learn more and see example use cases. You can run interpreter --help
+to see all of the flags or interpreter --profiles to see how different profiles will configure OI. The types of
+things you can accomplish with Open Interpreter are virtually limitless, and you don't need to be
+a programmer. Just explain what you want it to do in natural language, and OI will write the code
+and show it to you for approval before running anything. If you want to use Open Interpreter
+programmatically in your Python project, include the import statement `from interpreter
+import interpreter`, and then `interpreter.chat()` starts an interactive chat. Passing an instruction
+into chat executes a single command. Open Interpreter is going to change the way we
+use computers. With Open Interpreter, the only limit is your imagination. Install it today,
+and start pushing the boundaries of what you can achieve with your computer. Join
+our Discord or community on X for more resources and lots of helpful people.
+The future of human-computer interaction is here, and it's Open Interpreter.
+

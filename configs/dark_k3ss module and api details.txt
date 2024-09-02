@@ -1,0 +1,10 @@
+Ollama 3 Dolphin
+
+https://ollama.com/koesn/dolphin-llama3-8b
+https://huggingface.co/koesn/Mistral-7B-Sunda-v1.0-GGUF/blob/main/README.md?code=true
+https://huggingface.co/koesn/Dolphin-2.8-Experiment26-7B-GGUF
+
+Agent OS Model
+
+https://github.com/OpenInterpreter/open-interpreter
+

@@ -1,0 +1,155 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 # Howto: Setting Up Dark k3ss Project\
+\
+## Overview\
+\
+This guide will help you set up the **Dark k3ss** project either locally or in the cloud. The project involves installing necessary dependencies, creating the environment, and validating the setup to run advanced AI models and scripts efficiently.\
+\
+If you encounter any issues, don't hesitate to ask Chad (ChatGPT, LLM, etc.) for help!\
+\
+---\
+\
+## Step 1: Create and Prepare the Project Directory\
+\
+Create a directory for the project and initialize a Git repository.\
+\
+***CODE TO PASTE***\
+mkdir dark_k3ss\
+cd dark_k3ss\
+git init\
+***END***\
+\
+## Step 2: Install and Update Package Managers\
+\
+### Check if Homebrew is Installed\
+\
+Make sure **Homebrew** is installed. If not, install it using the following commands:\
+\
+Check if Homebrew is installed:\
+\
+***CODE TO PASTE***\
+brew --version\
+***END***\
+\
+Install Homebrew if not already installed:\
+\
+***CODE TO PASTE***\
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"\
+***END***\
+\
+### Update Homebrew\
+\
+Keep Homebrew up-to-date to ensure the latest versions of packages:\
+\
+***CODE TO PASTE***\
+brew update\
+***END***\
+\
+## Step 3: Install Core Dependencies\
+\
+### Install Python and FFmpeg via Homebrew\
+\
+Install the required Python version and multimedia handling tools:\
+\
+Install Python 3.12:\
+\
+***CODE TO PASTE***\
+brew install python@3.12\
+***END***\
+\
+Install FFmpeg:\
+\
+***CODE TO PASTE***\
+brew install ffmpeg\
+***END***\
+\
+## Step 4: Set Up Python Environment\
+\
+Create a Python virtual environment and install the necessary packages:\
+\
+Create a virtual environment:\
+\
+***CODE TO PASTE***\
+python3.12 -m venv myenv\
+source myenv/bin/activate\
+***END***\
+\
+Upgrade `pip` and install required Python packages:\
+\
+***CODE TO PASTE***\
+pip install --upgrade pip\
+pip install gradio requests torch transformers accelerate onnx onnxruntime bitsandbytes\
+***END***\
+\
+## Step 5: Install Git (if not already available)\
+\
+Make sure `git` is installed for version control:\
+\
+Install Git:\
+\
+***CODE TO PASTE***\
+brew install git\
+***END***\
+\
+## Step 6: Check Installed Versions and Verify Setup\
+\
+Verify all installations by checking their versions:\
+\
+Check Python version:\
+\
+***CODE TO PASTE***\
+python --version\
+***END***\
+\
+List all installed Python packages:\
+\
+***CODE TO PASTE***\
+pip list\
+***END***\
+\
+Check Git version:\
+\
+***CODE TO PASTE***\
+git --version\
+***END***\
+\
+Verify FFmpeg installation:\
+\
+***CODE TO PASTE***\
+ffmpeg -version\
+***END***\
+\
+## Step 7: Install Additional Tools (if needed)\
+\
+If Docker is needed for containerization:\
+\
+Install Docker:\
+\
+***CODE TO PASTE***\
+brew install docker\
+***END***\
+\
+## Final Validation Step\
+\
+Test your setup with a simple Python script to ensure all dependencies are correctly installed.\
+\
+## Reminder\
+\
+If you run into any issues, remember to ask Chad (ChatGPT, LLM, etc.) for help!\
+\
+---\
+\
+## Howto Summary\
+\
+- **Preparation**: Create the directory and initialize Git.\
+- **Installations**: Install and update Homebrew, Python, FFmpeg, and other necessary tools.\
+- **Environment Setup**: Create a Python virtual environment and install all required Python packages.\
+- **Validation**: Check versions and confirm that everything is working correctly.\
+\
+}
